@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Notes App</title>
+    <link rel="icon" href="/assets/images/notes.png" type="image/x-icon" />
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHq6f+2bX5QvZ9e4xk5zF1VjJpGmYlK7hPqD9uNwWcRZy+E4dBzOaL8tM6gXQvCjFhUuYxZw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <app-header></app-header>
+    <div class="app-container">
+        <aside id="note-form">
+            <h2>Tambah Catatan</h2>
+            <note-form></note-form>
+        </aside>
+        <main id="notes-list">
+            <h2>Daftar Catatan</h2>
+            <div id="notes-container"></div>
+        </main>
+    </div>
+    <app-footer></app-footer>
+</body>
+</html>

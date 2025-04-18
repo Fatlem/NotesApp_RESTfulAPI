@@ -1,0 +1,35 @@
+{
+    "name": "notes-app",
+    "version": "1.0.0",
+    "description": "Notes App with RESTful API integration",
+    "main": "src/app.js",
+    "scripts": {
+        "start-dev": "webpack serve --mode development",
+        "build": "webpack --mode production",
+        "format": "prettier --write \"src/**/*.{js,jsx,json,css,html}\""
+    },
+    "keywords": [
+        "notes",
+        "app",
+        "web-components",
+        "restful-api"
+    ],
+    "author": "Fatlem",
+    "license": "MIT",
+    "dependencies": {
+        "sweetalert2": "^11.4.0"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.26.10",
+        "@babel/preset-env": "^7.26.9",
+        "babel-loader": "^10.0.0",
+        "clean-webpack-plugin": "^4.0.0",
+        "css-loader": "^6.7.1",
+        "html-loader": "^4.2.0",
+        "html-webpack-plugin": "^5.5.0",
+        "style-loader": "^3.3.1",
+        "webpack": "^5.74.0",
+        "webpack-cli": "^4.10.0",
+        "webpack-dev-server": "^4.9.3"
+    }
+}
