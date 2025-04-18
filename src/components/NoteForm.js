@@ -84,7 +84,7 @@ class NoteForm extends HTMLElement {
         Swal.fire({
           icon: 'success',
           title: 'Catatan Diperbarui',
-          text: 'Catatan berhasil diperbarui!',
+          text: 'Done Sirr!',
           confirmButtonText: 'OK',
           confirmButtonColor: '#3498db',
         });
@@ -93,7 +93,7 @@ class NoteForm extends HTMLElement {
         Swal.fire({
           icon: 'success',
           title: 'Catatan Ditambahkan',
-          text: 'Catatan berhasil ditambahkan!',
+          text: 'Done Sirr!',
           confirmButtonText: 'OK',
           confirmButtonColor: '#3498db',
         });
