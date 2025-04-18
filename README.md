@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # 📝 Notes App
 
 Selamat datang di **Notes App**! Aplikasi ini dirancang untuk membantu Anda membuat, mengelola, dan menyimpan catatan dengan mudah. Anda dapat menambahkan catatan baru, mengedit catatan yang sudah ada, serta menghapus catatan yang tidak diperlukan.
