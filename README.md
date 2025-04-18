@@ -20,10 +20,14 @@ Selamat datang di **Notes App**! Aplikasi ini dirancang untuk membantu Anda memb
    ```bash
    npm install
 
-3. **Jalankan Aplikasi**:
+2. **Build App**:
+   ```bash
+   npm run build
+
+3. **Jalankan App**:
 
    ```bash
-   npm start
+   npm run start-dev
    ```
 
 ## 📖 Penggunaan
