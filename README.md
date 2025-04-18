@@ -85,4 +85,3 @@ Selamat datang di **Notes App**! Aplikasi ini dirancang untuk membantu Anda memb
 - SweetAlert2 untuk notifikasi interaktif
 - Webpack sebagai module bundler
 - CSS Grid & Flexbox untuk layout responsif
->>>>>>> 8e2a479 (📁Update🔥)
