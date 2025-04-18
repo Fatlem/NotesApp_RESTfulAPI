@@ -13,7 +13,7 @@ Selamat datang di **Notes App**! Aplikasi ini dirancang untuk membantu Anda memb
 
 1. **Clone Repository**:
    ```bash
-   git clone https://github.com/username/notes-app.git
+   git clone https://github.com/Fatlem/NotesApp_RESTfulAPI.git
    cd notes-app_RESTful_API
 
 2. **Instal Dependensi**:
