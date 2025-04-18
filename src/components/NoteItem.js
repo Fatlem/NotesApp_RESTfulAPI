@@ -107,7 +107,7 @@ class NoteItem extends HTMLElement {
     try {
       const result = await Swal.fire({
         title: 'Yakin?',
-        text: 'Catatan ini akan dihapus secara permanen!',
+        text: 'Yakin sirr dihapus permanen!',
         icon: 'warning',
         showCancelButton: true,
         confirmButtonColor: '#3085d6',
@@ -122,7 +122,7 @@ class NoteItem extends HTMLElement {
         Swal.fire({
           icon: 'success',
           title: 'Berhasil!',
-          text: 'Catatan berhasil dihapus!',
+          text: 'Done Sirr!',
           showConfirmButton: false,
           timer: 1500
         });
