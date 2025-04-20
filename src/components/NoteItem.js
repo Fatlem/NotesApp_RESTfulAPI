@@ -20,6 +20,7 @@ class NoteItem extends HTMLElement {
 
     this.shadowRoot.innerHTML = `
       <style>
+        /* Style sama seperti sebelumnya */
         .note {
           background: white;
           border-left: 4px solid #3498db;
@@ -116,7 +117,18 @@ class NoteItem extends HTMLElement {
         cancelButtonText: 'Batal'
       });
 
+      await new Promise(resolve => setTimeout(resolve, 1000));
+
       if (result.isConfirmed) {
+        Swal.fire({
+          title: 'Menghapus...',
+          text: 'Catatan sedang dihapus...',
+          allowOutsideClick: false,
+          didOpen: () => {
+            Swal.showLoading();
+          }
+        });
+
         await deleteNote(this.note.id);
 
         Swal.fire({
