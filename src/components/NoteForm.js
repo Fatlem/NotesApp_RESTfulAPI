@@ -79,6 +79,17 @@ class NoteForm extends HTMLElement {
     const body = this.shadowRoot.getElementById('body').value.trim();
 
     try {
+      Swal.fire({
+        title: this.noteToEdit ? 'Memperbarui...' : 'Menyimpan...',
+        text: this.noteToEdit ? 'Catatan sedang diperbarui...' : 'Catatan sedang disimpan...',
+        allowOutsideClick: false,
+        didOpen: () => {
+          Swal.showLoading();
+        }
+      });
+
+      await new Promise(resolve => setTimeout(resolve, 1000));
+
       if (this.noteToEdit) {
         await updateNote(this.noteToEdit.id, title, body);
         Swal.fire({
@@ -98,6 +109,7 @@ class NoteForm extends HTMLElement {
           confirmButtonColor: '#3498db',
         });
       }
+
       document.dispatchEvent(new CustomEvent('notes-updated'));
       this.resetForm();
     } catch (error) {
